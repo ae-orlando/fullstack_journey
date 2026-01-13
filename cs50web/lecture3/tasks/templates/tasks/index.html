@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>tasks</title>
+    </head>
+    <body>
+        <h1>Tasks</h1>
+        <ul>
+            {% for task in tasks %}
+                <li>{{task}}</li>
+            {% empty %}
+                <li>No tasks</li>
+            {% endfor %}
+        </ul>
+    <div>
+        <a href="{% url 'add' %}">Add New Task</a>
+    </div>
+    
+    </body>
+</html>
