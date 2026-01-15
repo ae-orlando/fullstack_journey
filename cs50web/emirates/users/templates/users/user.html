@@ -9,11 +9,21 @@
     <ul>
         <li>Username: {{request.user.username}}</li>
         <li>Email: {{request.user.email}}</li>
+
+        <h2>Flights Booked</h2>
+
     </ul>
     <div>{{request.user.last_name}}, upo ndani ya site sasa.</div>
-    <div>Mimi ni noma si noma?</div>
+    <div>
+        <!--Add video here-->
+        Mimi ni noma si noma?
+    </div>
 
     <a href="{% url 'logout' %}">
         <button>Log Out</button>
+    </a>
+
+    <a href="{% url 'flights:index' %}">
+        <button>Book a Flight</button>
     </a>
 {% endblock %}

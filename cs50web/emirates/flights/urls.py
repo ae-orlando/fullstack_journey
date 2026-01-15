@@ -2,6 +2,8 @@ from django.urls import path
 
 from . import views
 
+app_name = "flights"
+
 urlpatterns = [
     path("", views.index, name="index"),
     # tring to make a page for each flight
